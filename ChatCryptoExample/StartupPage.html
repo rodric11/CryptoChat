@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    <style type="text/css">
+        .container {
+            background-color: #99CCFF;
+            border: thick solid #808080;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+
+        <input type="hidden" id="mykey" value="" />
+        <input type="hidden" id="yourkey" value="" />
+        <ul id="discussion">
+        </ul>
+    </div>
+
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="Scripts/chatBrains.js"></script>
+    <script src="Scripts/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+</body>
+</html>
